@@ -11,6 +11,12 @@ public class Bitmap {
 		pixels = new int[ width * height];
 	}
 	
+	public void clear() {
+		for(int i = 0; i < pixels.length; i++) {
+			pixels[i] = 0;
+		}
+	}
+	
 	public void render(Bitmap bitmap, int xOffset, int yOffset) {
 		for(int y = 0; y < bitmap.height; y++) {
 			int yy = y + yOffset;

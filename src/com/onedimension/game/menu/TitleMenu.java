@@ -6,7 +6,7 @@ public class TitleMenu extends Menu {
 
 	public TitleMenu(Bitmap bitmap) {
 		super(bitmap);
-		
+		bitmap.clear();
 	}
 	
 	public void tick(boolean[] keys) {
