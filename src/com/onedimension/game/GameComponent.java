@@ -7,7 +7,6 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
-import java.util.Random;
 
 import javax.swing.JFrame;
 
@@ -108,12 +107,9 @@ public class GameComponent extends Canvas implements Runnable {
 			}
 		}
 	}
-	Random r = new Random();
 	
 	public void tick() {
-		for (int i = 0; i < pixels.length; i++) {
-			pixels[i] = r.nextInt(0xffffff) & 0xff00ff;
-		}
+		
 	}
 	
 	public void render() {
